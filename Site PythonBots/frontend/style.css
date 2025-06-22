@@ -1,0 +1,201 @@
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    background: linear-gradient(135deg, #f4f4f4 0%,rgb(46, 39, 59) 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header { 
+    background-color: #333;
+    backdrop-filter: blur(10px);
+    color: white; 
+    padding: 1.5rem; 
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 4px 4px 4px rgba(0,0,0,0.3);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a, nav button {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.2);
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: inherit;
+}
+
+nav a:hover, nav button:hover {
+    background: rgba(255,255,255,0.3);
+    transform: translateY(-2px);
+}
+
+header a, header span a, header span span { color: white; margin: 0 15px; text-decoration: none; }
+header #logout-button { background: none; border: none; color: #ffc107; cursor: pointer; font-size: 1em; vertical-align: middle; }
+main { max-width: 1200px; margin: 20px auto; padding: 20px; background-color: white; border-radius: 8px; }
+
+.main-content {
+    background: #fff;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.product-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+    gap: 25px; 
+    margin-top: 20px;
+}
+
+.product-card { 
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.product-card img { 
+    max-width: 100%; 
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px; 
+}
+
+.product-card h3 {
+    color: #333;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 1.2em;
+    font-weight: bold;
+    color:rgb(17, 20, 31);
+    margin: 10px 0;
+}
+
+.product-card button { 
+    background: linear-gradient(45deg, #333,rgb(71, 67, 74));
+    color: white; 
+    border: none; 
+    padding: 12px 20px; 
+    cursor: pointer; 
+    border-radius: 25px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.product-card button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+footer { text-align: center; padding: 1rem; margin-top: 20px; background-color: #333; color: white; }
+.form-container { 
+    max-width: 450px; 
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+.form-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.form-container input { 
+    display: block; 
+    width: 100%; 
+    padding: 15px; 
+    margin-bottom: 20px; 
+    box-sizing: border-box;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.form-container input:focus {
+    border-color:rgb(9, 11, 19);
+    outline: none;
+}
+
+.form-container button { 
+    width: 100%; 
+    padding: 15px;
+    background: linear-gradient(45deg, #333,rgb(71, 67, 74));
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-container button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}#message, #checkout-message { margin-top: 15px; font-weight: bold; }
+#cart-items .cart-item { display: flex; justify-content: space-between; padding: 10px; border-bottom: 1px solid #ddd; }
+
+#user-status {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#user-status span {
+    color: white;
+}
+
+#logout-button {
+    background: none;
+    border: none;
+    color: #ffc107;
+    cursor: pointer;
+    font: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+#user-status {
+    margin-left: auto;
+}

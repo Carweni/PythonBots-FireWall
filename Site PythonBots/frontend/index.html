@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Carbel</h1>
+        <nav>
+            <div>
+                <a href="carrinho.html">🛒 Carrinho (<span id="cart-count">0</span>)</a>
+            </div>
+            <div id="user-status">
+                <a href="cadastro.html">Cadastro</a>
+                <a href="login.html"> Login</a>
+                <span id="user-info"></span>
+                <button id="logout-btn" onclick="logout()" style="display: none;">Sair</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h2>Produtos</h2>
+        <div id="product-list" class="product-grid"></div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Carbel</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="config.js"></script>
+</body>
+</html>
