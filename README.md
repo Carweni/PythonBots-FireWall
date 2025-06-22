@@ -16,8 +16,16 @@ Este projeto utiliza **Flask** como backend.
 
 ```bash
 python app.py
-
+```
 
 ## Acesse o site no navegador pelo endereço:
 
 http://localhost:5000
+
+## Dependências
+
+Certifique-se de que a biblioteca python Flask esteja instalada em sua máquina. Caso não esteja, é possível obtê-la por meio do comando:
+
+```bash
+pip install flask
+```
