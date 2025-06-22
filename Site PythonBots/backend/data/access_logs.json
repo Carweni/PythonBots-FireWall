@@ -1,0 +1,699 @@
+[
+  {
+    "timestamp": "2025-06-20T11:22:22.000543",
+    "ip": "127.0.0.1",
+    "endpoint": "serve_static",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "bot_detection": "Muitas requisições por minuto: 21"
+    }
+  },
+  {
+    "timestamp": "2025-06-20T11:22:22.068561",
+    "ip": "127.0.0.1",
+    "endpoint": "serve_static",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "blocked_reason": "Padrão de bot detectado: Muitas requisições por minuto: 21"
+    }
+  },
+  {
+    "timestamp": "2025-06-20T11:22:24.445583",
+    "ip": "127.0.0.1",
+    "endpoint": "serve_static",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "blocked_reason": "Padrão de bot detectado: Muitas requisições por minuto: 21"
+    }
+  },
+  {
+    "timestamp": "2025-06-20T11:22:33.698629",
+    "ip": "127.0.0.1",
+    "endpoint": "serve_static",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "blocked_reason": "Padrão de bot detectado: Muitas requisições por minuto: 21"
+    }
+  },
+  {
+    "timestamp": "2025-06-20T11:22:44.513004",
+    "ip": "127.0.0.1",
+    "endpoint": "serve_static",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "blocked_reason": "Padrão de bot detectado: Muitas requisições por minuto: 21"
+    }
+  },
+  {
+    "timestamp": "2025-06-20T11:22:51.718179",
+    "ip": "127.0.0.1",
+    "endpoint": "serve_static",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "blocked_reason": "Padrão de bot detectado: Muitas requisições por minuto: 21"
+    }
+  },
+  {
+    "timestamp": "2025-06-20T11:22:53.547063",
+    "ip": "127.0.0.1",
+    "endpoint": "serve_static",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "blocked_reason": "Padrão de bot detectado: Muitas requisições por minuto: 21"
+    }
+  },
+  {
+    "timestamp": "2025-06-20T11:22:57.505194",
+    "ip": "127.0.0.1",
+    "endpoint": "serve_static",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "blocked_reason": "Padrão de bot detectado: Muitas requisições por minuto: 21"
+    }
+  },
+  {
+    "timestamp": "2025-06-20T12:41:21.017015",
+    "ip": "127.0.0.1",
+    "endpoint": "serve_static",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "bot_detection": "Muitas requisições por minuto: 21"
+    }
+  },
+  {
+    "timestamp": "2025-06-20T12:41:27.376304",
+    "ip": "127.0.0.1",
+    "endpoint": "serve_static",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "blocked_reason": "Padrão de bot detectado: Muitas requisições por minuto: 21"
+    }
+  },
+  {
+    "timestamp": "2025-06-20T12:41:37.810793",
+    "ip": "127.0.0.1",
+    "endpoint": "serve_static",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "blocked_reason": "Padrão de bot detectado: Muitas requisições por minuto: 21"
+    }
+  },
+  {
+    "timestamp": "2025-06-20T12:45:36.454227",
+    "ip": "127.0.0.1",
+    "endpoint": "serve_index",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "blocked_reason": "Padrão de bot detectado: Muitas requisições por minuto: 21"
+    }
+  },
+  {
+    "timestamp": "2025-06-20T12:45:40.668775",
+    "ip": "127.0.0.1",
+    "endpoint": "serve_index",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "blocked_reason": "Padrão de bot detectado: Muitas requisições por minuto: 21"
+    }
+  },
+  {
+    "timestamp": "2025-06-20T13:27:37.076595",
+    "ip": "127.0.0.1",
+    "endpoint": "login",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "failed_attempts": 1
+    }
+  },
+  {
+    "timestamp": "2025-06-20T13:27:46.181375",
+    "ip": "127.0.0.1",
+    "endpoint": "login",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "failed_attempts": 2
+    }
+  },
+  {
+    "timestamp": "2025-06-20T13:30:47.418058",
+    "ip": "127.0.0.1",
+    "endpoint": "register",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "user_email": "a1@gmail.com"
+    }
+  },
+  {
+    "timestamp": "2025-06-20T13:30:57.372624",
+    "ip": "127.0.0.1",
+    "endpoint": "login",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "failed_attempts": 1
+    }
+  },
+  {
+    "timestamp": "2025-06-20T13:31:07.117838",
+    "ip": "127.0.0.1",
+    "endpoint": "login",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "user_email": "a1@gmail.com"
+    }
+  },
+  {
+    "timestamp": "2025-06-20T13:31:19.147572",
+    "ip": "127.0.0.1",
+    "endpoint": "checkout",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "bot_detection": "Muitas requisições por minuto: 21"
+    }
+  },
+  {
+    "timestamp": "2025-06-20T13:49:59.902108",
+    "ip": "127.0.0.1",
+    "endpoint": "login",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "user_email": "a1@gmail.com"
+    }
+  },
+  {
+    "timestamp": "2025-06-20T13:54:38.235222",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-06-20T13:54:43.834386",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-06-20T13:54:52.913644",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-06-20T15:20:15.014516",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-06-20T15:20:22.815497",
+    "ip": "127.0.0.1",
+    "endpoint": "login",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "user_email": "a1@gmail.com"
+    }
+  },
+  {
+    "timestamp": "2025-06-20T15:20:24.861837",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-06-20T15:20:40.403782",
+    "ip": "127.0.0.1",
+    "endpoint": "checkout",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "order_id": 1,
+      "total": 5428.889999999999
+    }
+  },
+  {
+    "timestamp": "2025-06-20T15:20:46.960621",
+    "ip": "127.0.0.1",
+    "endpoint": "serve_static",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "bot_detection": "Muitas requisições por minuto: 21"
+    }
+  },
+  {
+    "timestamp": "2025-06-20T15:20:47.039058",
+    "ip": "127.0.0.1",
+    "endpoint": "serve_static",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "blocked_reason": "Padrão de bot detectado: Muitas requisições por minuto: 21"
+    }
+  },
+  {
+    "timestamp": "2025-06-20T15:20:47.093346",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "blocked_reason": "Padrão de bot detectado: Muitas requisições por minuto: 21"
+    }
+  },
+  {
+    "timestamp": "2025-06-20T15:20:54.128303",
+    "ip": "127.0.0.1",
+    "endpoint": "serve_static",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "blocked_reason": "Padrão de bot detectado: Muitas requisições por minuto: 21"
+    }
+  },
+  {
+    "timestamp": "2025-06-20T15:23:19.522899",
+    "ip": "127.0.0.1",
+    "endpoint": "serve_index",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "blocked_reason": "Padrão de bot detectado: Muitas requisições por minuto: 21"
+    }
+  },
+  {
+    "timestamp": "2025-06-20T15:23:24.245604",
+    "ip": "127.0.0.1",
+    "endpoint": "serve_index",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "blocked_reason": "Padrão de bot detectado: Muitas requisições por minuto: 21"
+    }
+  },
+  {
+    "timestamp": "2025-06-20T15:23:44.966690",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-06-20T15:24:03.640133",
+    "ip": "127.0.0.1",
+    "endpoint": "login",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "user_email": "a1@gmail.com"
+    }
+  },
+  {
+    "timestamp": "2025-06-20T15:24:05.409494",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-06-20T15:24:22.170527",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-06-20T15:29:22.417912",
+    "ip": "127.0.0.1",
+    "endpoint": "serve_static",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "blocked_reason": "Padrão de bot detectado: Muitas requisições por minuto: 21"
+    }
+  },
+  {
+    "timestamp": "2025-06-20T15:29:40.992973",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-06-20T15:31:14.533073",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-06-20T15:31:23.793511",
+    "ip": "127.0.0.1",
+    "endpoint": "login",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "user_email": "a1@gmail.com"
+    }
+  },
+  {
+    "timestamp": "2025-06-20T15:31:25.546005",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-06-20T15:31:38.639738",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-06-20T15:38:01.914845",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-06-20T15:38:11.507866",
+    "ip": "127.0.0.1",
+    "endpoint": "login",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "user_email": "a1@gmail.com"
+    }
+  },
+  {
+    "timestamp": "2025-06-20T15:38:13.271265",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-06-20T15:39:14.923913",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-06-20T15:39:17.727889",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-06-20T15:39:32.955180",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-06-20T15:39:36.011580",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-06-20T15:39:36.957498",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-06-20T15:39:38.630605",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-06-20T15:39:42.110408",
+    "ip": "127.0.0.1",
+    "endpoint": "checkout",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "bot_reasons": [
+        "Preenchimento muito rápido: 1.624s"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-06-20T15:41:46.679544",
+    "ip": "127.0.0.1",
+    "endpoint": "checkout",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "order_id": 2,
+      "total": 9459.779999999999
+    }
+  },
+  {
+    "timestamp": "2025-06-20T15:41:50.686545",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-06-20T15:41:52.757260",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-06-20T15:41:54.258407",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-06-20T15:41:55.252643",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-06-20T15:42:00.963573",
+    "ip": "127.0.0.1",
+    "endpoint": "checkout",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "order_id": 3,
+      "total": 5079.389999999999
+    }
+  },
+  {
+    "timestamp": "2025-06-20T15:42:04.367400",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-06-20T15:42:06.826027",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-06-20T15:42:17.483986",
+    "ip": "127.0.0.1",
+    "endpoint": "login",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "failed_attempts": 1
+    }
+  },
+  {
+    "timestamp": "2025-06-20T15:42:17.738371",
+    "ip": "127.0.0.1",
+    "endpoint": "login",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "failed_attempts": 2
+    }
+  },
+  {
+    "timestamp": "2025-06-20T15:42:17.949968",
+    "ip": "127.0.0.1",
+    "endpoint": "login",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "failed_attempts": 3
+    }
+  },
+  {
+    "timestamp": "2025-06-20T15:42:18.636816",
+    "ip": "127.0.0.1",
+    "endpoint": "login",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "failed_attempts": 4
+    }
+  },
+  {
+    "timestamp": "2025-06-20T15:42:18.916386",
+    "ip": "127.0.0.1",
+    "endpoint": "login",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "failed_attempts": 5
+    }
+  },
+  {
+    "timestamp": "2025-06-20T15:42:19.170583",
+    "ip": "127.0.0.1",
+    "endpoint": "login",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "blocked_reason": "Muitas tentativas de login falhadas: 5"
+    }
+  },
+  {
+    "timestamp": "2025-06-20T15:42:19.860433",
+    "ip": "127.0.0.1",
+    "endpoint": "login",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "blocked_reason": "Muitas tentativas de login falhadas: 5"
+    }
+  },
+  {
+    "timestamp": "2025-06-20T15:42:25.081708",
+    "ip": "127.0.0.1",
+    "endpoint": "login",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "blocked_reason": "Muitas tentativas de login falhadas: 5"
+    }
+  },
+  {
+    "timestamp": "2025-06-20T15:53:14.942081",
+    "ip": "127.0.0.1",
+    "endpoint": "login",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "user_email": "a1@gmail.com"
+    }
+  },
+  {
+    "timestamp": "2025-06-20T15:53:16.710938",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-06-20T15:55:12.413628",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-06-20T15:55:13.126208",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-06-20T15:55:17.395500",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-06-20T15:56:01.494535",
+    "ip": "127.0.0.1",
+    "endpoint": "checkout",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "details": {
+      "bot_reasons": [
+        "Poucos movimentos do mouse: 0"
+      ]
+    }
+  }
+]
