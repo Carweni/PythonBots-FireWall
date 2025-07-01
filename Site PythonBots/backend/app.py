@@ -1,11 +1,11 @@
-from flask import Flask, request, jsonify, send_from_directory
-from flask_cors import CORS
 import json
 import os
 from datetime import datetime, timedelta
 import hashlib
 import time
 from collections import defaultdict, deque
+from flask import Flask, request, jsonify, send_from_directory
+from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app, resources={
@@ -18,11 +18,11 @@ CORS(app, resources={
 
 # Configurações do sistema anti-bot
 BOT_DETECTION_CONFIG = {
-    'MAX_REQUESTS_PER_MINUTE': 50,
+    'MAX_REQUESTS_PER_MINUTE': 35,
     'MAX_FAILED_LOGINS': 5,
     'BLOCK_DURATION_MINUTES': 15,
-    'MIN_FORM_FILL_TIME': 1,  # segundos
-    'MIN_MOUSE_MOVEMENTS': 3,
+    'MIN_FORM_FILL_TIME': 0.5,  # segundos
+    'MIN_MOUSE_MOVEMENTS': 2,
     'MIN_KEYSTROKES': 5
 }
 
@@ -80,20 +80,16 @@ def log_access(ip, endpoint, success=True, details=None):
         'user_agent': request.headers.get('User-Agent', ''),
         'details': details or {}
     }
-    
     logs = load_json_file(DATA_FILES['access_logs'])
     logs.append(log_entry)
-    
     # Manter apenas os últimos 10000 logs
     if len(logs) > 10000:
         logs = logs[-10000:]
-    
     save_json_file(DATA_FILES['access_logs'], logs)
 
 def is_ip_blocked(ip):
     """Verifica se um IP está bloqueado"""
     blocked_data = load_json_file(DATA_FILES['blocked_ips'])
-    
     for blocked_entry in blocked_data:
         if blocked_entry['ip'] == ip:
             block_time = datetime.fromisoformat(blocked_entry['blocked_until'])
@@ -103,30 +99,24 @@ def is_ip_blocked(ip):
                 # Remove IPs expirados
                 blocked_data.remove(blocked_entry)
                 save_json_file(DATA_FILES['blocked_ips'], blocked_data)
-    
     return False, None
 
 def block_ip(ip, reason, duration_minutes=None):
     """Bloqueia um IP por um período"""
     if duration_minutes is None:
         duration_minutes = BOT_DETECTION_CONFIG['BLOCK_DURATION_MINUTES']
-    
     blocked_until = datetime.now() + timedelta(minutes=duration_minutes)
-    
     blocked_data = load_json_file(DATA_FILES['blocked_ips'])
-    
     # Remove entrada anterior se existir
     blocked_data = [b for b in blocked_data if b['ip'] != ip]
-    
     blocked_data.append({
         'ip': ip,
         'reason': reason,
         'blocked_at': datetime.now().isoformat(),
         'blocked_until': blocked_until.isoformat()
     })
-    
+    # Salva o IP bloqueado no blocked_ips.json:
     save_json_file(DATA_FILES['blocked_ips'], blocked_data)
-    
     # Log da detecção de bot
     bot_detections = load_json_file(DATA_FILES['bot_detections'])
     bot_detections.append({
@@ -384,7 +374,8 @@ def admin_stats():
     # Estatísticas básicas
     stats = {
         'total_requests': len(logs),
-        'blocked_ips_count': len([b for b in blocked_ips if datetime.fromisoformat(b['blocked_until']) > datetime.now()]),
+        'blocked_ips_count': len([b for b in blocked_ips if 
+                                  datetime.fromisoformat(b['blocked_until']) > datetime.now()]),
         'bot_detections_count': len(bot_detections),
         'recent_activity': logs[-20:] if logs else [],
         'top_blocked_reasons': {}
@@ -407,3 +398,4 @@ if __name__ == '__main__':
     print(f"   • Tempo mínimo de preenchimento: {BOT_DETECTION_CONFIG['MIN_FORM_FILL_TIME']}s")
     print(f"   • Bloqueio por {BOT_DETECTION_CONFIG['BLOCK_DURATION_MINUTES']} minutos")
     app.run(debug=True, host='0.0.0.0', port=5500)
+    
