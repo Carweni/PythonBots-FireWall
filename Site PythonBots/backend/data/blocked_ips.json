@@ -1,2 +1,8 @@
 [
+  {
+    "ip": "127.0.0.1",
+    "reason": "Bot detectado no login: Poucos movimentos do mouse: 0",
+    "blocked_at": "2025-07-01T11:26:58.178923",
+    "blocked_until": "2025-07-01T11:41:58.178177"
+  }
 ]

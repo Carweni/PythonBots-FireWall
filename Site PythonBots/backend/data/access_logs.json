@@ -1,3 +1,22 @@
 [
-
+  {
+    "timestamp": "2025-07-01T11:17:44.021796",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-07-01T11:26:58.185206",
+    "ip": "127.0.0.1",
+    "endpoint": "login",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0",
+    "details": {
+      "bot_reasons": [
+        "Poucos movimentos do mouse: 0"
+      ]
+    }
+  }
 ]

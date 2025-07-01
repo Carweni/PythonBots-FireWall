@@ -1,7 +1,6 @@
 import random
-from typing import List
-import pyautogui
 import time
+import pyautogui
 import pygetwindow as gw
 
 # Configurações
@@ -11,83 +10,93 @@ CREDENCIAIS = {
     'senha': 'a'
 }
 
-def focar_navegador(titulo: str = 'Carbel') -> None:
-    """Foca na janela do navegador"""
+def focar_navegador():
+    """Foca na janela do navegador onde o site está aberto"""
     try:
-        navegador = gw.getWindowsWithTitle(titulo)[0]
-        navegador.activate()
-        time.sleep(DELAY)
-    except IndexError:
-        print(f"Janela com título '{titulo}' não encontrada")
-        exit()
+        # Lista de navegadores comuns
+        navegadores = ['Chrome', 'Firefox', 'Edge', 'Opera', 'Brave']
+        
+        for nav in navegadores:
+            try:
+                janela = gw.getWindowsWithTitle(nav)[0]
+                if janela:
+                    janela.activate()
+                    time.sleep(DELAY)
+                    return True
+            except IndexError:
+                continue
+        
+        print("Navegador não encontrado. Certifique-se de que o site está aberto em Chrome, Firefox, Edge, Opera ou Brave.")
+        return False
+    except Exception as e:
+        print(f"Erro ao focar no navegador: {e}")
+        return False
 
-def selecionar_elemento_por_id(element_id: str) -> None:
-    """Usa o menu de inspeção para selecionar elemento pelo ID"""
-    # Abre o inspetor (Ctrl+Shift+I)
-    pyautogui.hotkey('ctrl', 'shift', 'i')
-    time.sleep(DELAY)
-    # Navega para a aba Elements
-    pyautogui.hotkey('ctrl', 'shift', 'c')
-    time.sleep(DELAY)
-    # Abre o seletor de elementos
-    pyautogui.write(f'document.getElementById("{element_id}")')
-    pyautogui.press('enter')
-    time.sleep(DELAY)
-    # Fecha o inspetor
-    pyautogui.hotkey('ctrl', 'shift', 'i')
-
-def fazer_login() -> None:
-    """Realiza o login usando o botão por ID"""
-    focar_navegador()
+def fazer_login():
+    """Realiza o login no site"""
+    if not focar_navegador():
+        return
     
-    # Clica no botão de login via inspetor
-    selecionar_elemento_por_id('botao_login')
-    time.sleep(DELAY)
+    # Navega para a página de login
+    pyautogui.hotkey('ctrl', 'l')  # Foca na barra de endereço
+    time.sleep(0.5)
+    pyautogui.write('http://localhost:5500/login.html')
+    pyautogui.press('enter')
+    time.sleep(DELAY * 3)  # Espera a página carregar
     
     # Preenche o email
+    pyautogui.press('tab', presses=2)  # Navega até o campo email
+    time.sleep(0.5)
     pyautogui.write(CREDENCIAIS['email'])
-    time.sleep(DELAY/2)
-    pyautogui.press('tab')  # navega para o campo senha
+    time.sleep(0.5)
     
     # Preenche a senha
+    pyautogui.press('tab')  # Navega para o campo senha
+    time.sleep(0.5)
     pyautogui.write(CREDENCIAIS['senha'])
-    time.sleep(DELAY/2)
+    time.sleep(0.5)
+    
+    # Submete o formulário
     pyautogui.press('enter')
-    time.sleep(DELAY * 3)
+    time.sleep(DELAY * 3)  # Espera o login ser processado
+    print("Tentativa de login realizada.")
 
-def adicionar_ao_carrinho(produto_ids: List[str], quantidade_aleatoria: bool = True) -> None:
+def adicionar_ao_carrinho(produto_ids, quantidade_aleatoria=True):
     """
     Adiciona produtos ao carrinho de forma aleatória
-    
-    Args:
-        produto_ids: Lista de IDs dos produtos
-        quantidade_aleatoria: Se True, seleciona um número aleatório de produtos
     """
-    focar_navegador()
+    if not focar_navegador():
+        return
     
-    # Decide quantos produtos adicionar (entre 1 e o total disponível)
+    # Navega para a página principal
+    pyautogui.hotkey('ctrl', 'l')
+    time.sleep(0.5)
+    pyautogui.write('http://localhost:5500')
+    pyautogui.press('enter')
+    time.sleep(DELAY * 3)
+    
+    # Decide quantos produtos adicionar
     if quantidade_aleatoria:
         num_produtos = random.randint(1, len(produto_ids))
         produtos_selecionados = random.sample(produto_ids, num_produtos)
     else:
         produtos_selecionados = produto_ids
     
-    print(f"Adicionando {len(produtos_selecionados)} produtos ao carrinho...")
+    print(f"Tentando adicionar {len(produtos_selecionados)} produtos ao carrinho...")
+    
+    # Posiciona no primeiro produto
+    pyautogui.moveTo(500, 400)  # Ajuste estas coordenadas conforme necessário
+    time.sleep(1)
     
     for produto_id in produtos_selecionados:
         try:
-            # Seleciona o botão do produto
-            selecionar_elemento_por_id(produto_id)
-            
-            # Simula um clique
+            # Clica no botão (ajuste o número de tabs conforme necessário)
+            pyautogui.press('tab', presses=int(produto_id)*5)  # Aproximação
+            time.sleep(0.5)
             pyautogui.press('space')
             time.sleep(DELAY)
             
-            # Rola a página para o próximo produto
-            pyautogui.scroll(-300)
-            time.sleep(DELAY/2)
-            
-            print(f"Produto ID {produto_id} adicionado com sucesso!")
+            print(f"Produto ID {produto_id} - ação realizada")
             
         except Exception as e:
             print(f"Erro ao adicionar produto {produto_id}: {e}")
@@ -96,13 +105,11 @@ def adicionar_ao_carrinho(produto_ids: List[str], quantidade_aleatoria: bool = T
     print(f"Processo concluído! {len(produtos_selecionados)} produtos foram adicionados ao carrinho.")
 
 if __name__ == "__main__":
-    # Lista completa de IDs de produtos disponíveis
+    # Lista de IDs de produtos disponíveis
     TODOS_PRODUTOS_IDS = [
         '1', '2', '3', '4', 
         '5', '6', '7', '8'
     ]
-    
     fazer_login()
-    
     # Adiciona produtos aleatoriamente (para adicionar todos, usar quantidade_aleatoria=False)
     adicionar_ao_carrinho(TODOS_PRODUTOS_IDS, quantidade_aleatoria=True)

@@ -1,3 +1,8 @@
 [
-
+  {
+    "timestamp": "2025-07-01T11:26:58.183977",
+    "ip": "127.0.0.1",
+    "reason": "Bot detectado no login: Poucos movimentos do mouse: 0",
+    "blocked_duration_minutes": 15
+  }
 ]
