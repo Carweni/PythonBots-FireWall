@@ -183,8 +183,7 @@ function logout() {
     window.location.href = 'index.html';
 }
 
-
-// --- FUNÇÕES DO CARRINHO ---
+// --- FUNÇÕES DO CARRINHO MELHORADAS ---
 function getCarrinho() {
     return JSON.parse(localStorage.getItem('carrinho')) || [];
 }
@@ -213,13 +212,28 @@ function adicionarAoCarrinho(produtoId) {
             const produto = produtos.find(p => p.id === produtoId);
             if (produto) {
                 const carrinho = getCarrinho();
-                carrinho.push(produto);
+                
+                // Verifica se o produto já existe no carrinho
+                const itemExistente = carrinho.find(item => item.id === produtoId);
+                
+                if (itemExistente) {
+                    itemExistente.quantidade += 1;
+                } else {
+                    carrinho.push({
+                        ...produto,
+                        quantidade: 1
+                    });
+                }
+                
                 salvarCarrinho(carrinho);
                 
                 // Atualizar a exibição do carrinho se estiver na página certa
                 if (window.location.pathname.includes('carrinho.html')) {
                     inicializarPaginaCarrinho();
                 }
+                
+                // Mostrar feedback visual
+                mostrarNotificacao(`${produto.nome} adicionado ao carrinho!`);
             }
         })
         .catch(error => {
@@ -227,10 +241,44 @@ function adicionarAoCarrinho(produtoId) {
         });
 }
 
+function alterarQuantidade(produtoId, delta) {
+    const carrinho = getCarrinho();
+    const item = carrinho.find(item => item.id === produtoId);
+    
+    if (item) {
+        item.quantidade += delta;
+        
+        if (item.quantidade <= 0) {
+            removerDoCarrinho(produtoId);
+        } else {
+            salvarCarrinho(carrinho);
+            inicializarPaginaCarrinho();
+        }
+    }
+}
+
+function removerDoCarrinho(produtoId) {
+    const carrinho = getCarrinho();
+    const novoCarrinho = carrinho.filter(item => item.id !== produtoId);
+    salvarCarrinho(novoCarrinho);
+    inicializarPaginaCarrinho();
+    mostrarNotificacao('Produto removido do carrinho');
+}
+
+function limparCarrinho() {
+    if (confirm('Tem certeza que deseja limpar todo o carrinho?')) {
+        localStorage.removeItem('carrinho');
+        atualizarContadorCarrinho();
+        inicializarPaginaCarrinho();
+    }
+}
+
 function atualizarContadorCarrinho() {
     const contador = document.getElementById('cart-count');
     if (contador) {
-        contador.textContent = getCarrinho().length;
+        const carrinho = getCarrinho();
+        const totalItens = carrinho.reduce((total, item) => total + item.quantidade, 0);
+        contador.textContent = totalItens;
     }
 }
 
@@ -240,20 +288,56 @@ function inicializarPaginaCarrinho() {
     const carrinho = getCarrinho();
     let total = 0;
 
-    container.innerHTML = carrinho.length === 0 ? '<p>Seu carrinho está vazio.</p>' : '';
-    
-    carrinho.forEach(item => {
-        container.innerHTML += `
-            <div class="cart-item">
-                <span>${item.nome}</span>
-                <span>R$ ${item.preco.toFixed(2)}</span>
+    if (carrinho.length === 0) {
+        container.innerHTML = `
+            <div class="carrinho-vazio">
+                <p>Seu carrinho está vazio.</p>
+                <a href="index.html" class="btn-continuar-comprando">Continuar Comprando</a>
             </div>
         `;
-        total += item.preco;
+        totalEl.textContent = '0.00';
+        return;
+    }
+
+    container.innerHTML = `
+        <div class="carrinho-header">
+            <button onclick="limparCarrinho()" class="btn-limpar-carrinho">Limpar Carrinho</button>
+        </div>
+    `;
+    
+    carrinho.forEach(item => {
+        const subtotal = item.preco * item.quantidade;
+        total += subtotal;
+        
+        container.innerHTML += `
+            <div class="cart-item">
+                <div class="item-info">
+                    <img src="${item.imagem_url}" alt="${item.nome}" class="item-image">
+                    <div class="item-details">
+                        <h4>${item.nome}</h4>
+                        <p class="item-price">R$ ${item.preco.toFixed(2)} cada</p>
+                    </div>
+                </div>
+                <div class="item-controls">
+                    <div class="quantity-controls">
+                        <button onclick="alterarQuantidade(${item.id}, -1)" class="btn-quantity">-</button>
+                        <span class="quantity">${item.quantidade}</span>
+                        <button onclick="alterarQuantidade(${item.id}, 1)" class="btn-quantity">+</button>
+                    </div>
+                    <div class="item-subtotal">R$ ${subtotal.toFixed(2)}</div>
+                    <button onclick="removerDoCarrinho(${item.id})" class="btn-remover">Remover</button>
+                </div>
+            </div>
+        `;
     });
 
     totalEl.textContent = total.toFixed(2);
-    document.getElementById('checkout-button').addEventListener('click', finalizarCompra);
+    
+    // Adiciona evento ao botão de checkout
+    const checkoutBtn = document.getElementById('checkout-button');
+    if (checkoutBtn) {
+        checkoutBtn.onclick = finalizarCompra;
+    }
 }
 
 function finalizarCompra() {
@@ -280,6 +364,8 @@ function finalizarCompra() {
         keyStrokes: userBehavior.keyStrokes
     };
 
+    const total = carrinho.reduce((sum, item) => sum + (item.preco * item.quantidade), 0);
+
     fetch('http://localhost:5500/api/checkout', {
         method: 'POST',
         headers: {
@@ -288,7 +374,7 @@ function finalizarCompra() {
         body: JSON.stringify({
             user_email: usuarioLogado.email,
             items: carrinho,
-            total: carrinho.reduce((sum, item) => sum + item.preco, 0),
+            total: total,
             behavior: behaviorData
         })
     })
@@ -314,6 +400,23 @@ function finalizarCompra() {
         messageEl.style.color = 'red';
         messageEl.textContent = error.error || 'Erro ao finalizar compra';
     });
+}
+
+function mostrarNotificacao(mensagem) {
+    // Cria elemento de notificação
+    const notificacao = document.createElement('div');
+    notificacao.className = 'notificacao';
+    notificacao.textContent = mensagem;
+    
+    // Adiciona ao body
+    document.body.appendChild(notificacao);
+    
+    // Remove após 3 segundos
+    setTimeout(() => {
+        if (notificacao.parentNode) {
+            notificacao.parentNode.removeChild(notificacao);
+        }
+    }, 3000);
 }
 
 // Objeto para armazenar timestamps e eventos

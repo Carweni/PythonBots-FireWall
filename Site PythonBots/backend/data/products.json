@@ -3,24 +3,48 @@
         "id": 1,
         "nome": "Notebook Gamer",
         "preco": 4599.90,
-        "imagem_url": "https://via.placeholder.com/150/0000FF/FFFFFF?text=Notebook"
+        "imagem_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Ynl4AChcD5ZsO_c2enJMr9ajzGuPMQEcpQ&s"
     },
     {
         "id": 2,
         "nome": "Mouse Sem Fio",
         "preco": 129.99,
-        "imagem_url": "https://via.placeholder.com/150/FF0000/FFFFFF?text=Mouse"
+        "imagem_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS2GE7OTe2cGTjdBbNeCd0KAmatP3hEFgdew&s"
     },
     {
         "id": 3,
         "nome": "Teclado Mecânico",
         "preco": 349.50,
-        "imagem_url": "https://via.placeholder.com/150/008000/FFFFFF?text=Teclado"
+        "imagem_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqa8NJbK7fbEu-CixJau3j-4i4Yw29NjdTUA&s"
     },
     {
         "id": 4,
         "nome": "Monitor 4K",
         "preco": 1899.00,
-        "imagem_url": "https://via.placeholder.com/150/FFFF00/000000?text=Monitor"
+        "imagem_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWSuEJDHT2bbtLRsjdquvO91v6tipFcb18sw&s"
+    },
+    {
+        "id": 5,
+        "nome": "MousePad Gamer",
+        "preco": 199.99,
+        "imagem_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqz5oATLYkzmHzZMvCUs_uuzfLIGJwW58Jjw&s"
+    },
+    {
+        "id": 6,
+        "nome": "Cadeira Gamer",
+        "preco": 2100.00,
+        "imagem_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSARSMOW5aVhHa_GGAWgQTznqPESb5tRGkrXg&s"
+    },
+    {
+        "id": 7,
+        "nome": "Microfone Gamer",
+        "preco": 750.90,
+        "imagem_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmRMOmhchU6Xsp4GPLQdKNUelKr2LZW5IHgw&s"
+    },
+    {
+        "id": 8,
+        "nome": "Headset Sem Fio",
+        "preco": 550.00,
+        "imagem_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoYxlCs3up_IwjyV0oDvAyPuQ3ZityKq2DAA&s"
     }
 ]

@@ -1,38 +1,3 @@
 [
-  {
-    "timestamp": "2025-06-20T11:22:21.997213",
-    "ip": "127.0.0.1",
-    "reason": "Padrão de bot detectado: Muitas requisições por minuto: 21",
-    "blocked_duration_minutes": 15
-  },
-  {
-    "timestamp": "2025-06-20T12:41:21.005624",
-    "ip": "127.0.0.1",
-    "reason": "Padrão de bot detectado: Muitas requisições por minuto: 21",
-    "blocked_duration_minutes": 15
-  },
-  {
-    "timestamp": "2025-06-20T13:31:19.141155",
-    "ip": "127.0.0.1",
-    "reason": "Padrão de bot detectado: Muitas requisições por minuto: 21",
-    "blocked_duration_minutes": 15
-  },
-  {
-    "timestamp": "2025-06-20T15:39:42.105085",
-    "ip": "127.0.0.1",
-    "reason": "Bot detectado no checkout: Preenchimento muito rápido: 1.624s",
-    "blocked_duration_minutes": 15
-  },
-  {
-    "timestamp": "2025-06-20T15:42:18.909388",
-    "ip": "127.0.0.1",
-    "reason": "Muitas tentativas de login falhadas: 5",
-    "blocked_duration_minutes": 15
-  },
-  {
-    "timestamp": "2025-06-20T15:56:01.489921",
-    "ip": "127.0.0.1",
-    "reason": "Bot detectado no checkout: Poucos movimentos do mouse: 0",
-    "blocked_duration_minutes": 15
-  }
+
 ]

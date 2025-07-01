@@ -20,7 +20,7 @@ python app.py
 
 ## Acesse o site no navegador pelo endereço:
 
-http://localhost:5000
+http://localhost:5500
 
 ## Dependências
 

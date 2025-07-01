@@ -91,5 +91,81 @@
     "total": 5079.389999999999,
     "created_at": "2025-06-20T15:42:00.957949",
     "ip": "127.0.0.1"
+  },
+  {
+    "id": 4,
+    "user_email": "a1@gmail.com",
+    "items": [
+      {
+        "id": 3,
+        "imagem_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqa8NJbK7fbEu-CixJau3j-4i4Yw29NjdTUA&s",
+        "nome": "Teclado Mecânico",
+        "preco": 349.5
+      },
+      {
+        "id": 2,
+        "imagem_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS2GE7OTe2cGTjdBbNeCd0KAmatP3hEFgdew&s",
+        "nome": "Mouse Sem Fio",
+        "preco": 129.99
+      }
+    ],
+    "total": 479.49,
+    "created_at": "2025-07-01T10:18:13.464819",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": 5,
+    "user_email": "a1@gmail.com",
+    "items": [
+      {
+        "id": 2,
+        "imagem_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS2GE7OTe2cGTjdBbNeCd0KAmatP3hEFgdew&s",
+        "nome": "Mouse Sem Fio",
+        "preco": 129.99,
+        "quantidade": 1
+      }
+    ],
+    "total": 129.99,
+    "created_at": "2025-07-01T10:27:30.090814",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": 6,
+    "user_email": "a1@gmail.com",
+    "items": [
+      {
+        "id": 2,
+        "imagem_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS2GE7OTe2cGTjdBbNeCd0KAmatP3hEFgdew&s",
+        "nome": "Mouse Sem Fio",
+        "preco": 129.99,
+        "quantidade": 1
+      },
+      {
+        "id": 1,
+        "imagem_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Ynl4AChcD5ZsO_c2enJMr9ajzGuPMQEcpQ&s",
+        "nome": "Notebook Gamer",
+        "preco": 4599.9,
+        "quantidade": 1
+      }
+    ],
+    "total": 4729.889999999999,
+    "created_at": "2025-07-01T10:29:22.491264",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": 7,
+    "user_email": "a1@gmail.com",
+    "items": [
+      {
+        "id": 3,
+        "imagem_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqa8NJbK7fbEu-CixJau3j-4i4Yw29NjdTUA&s",
+        "nome": "Teclado Mecânico",
+        "preco": 349.5,
+        "quantidade": 1
+      }
+    ],
+    "total": 349.5,
+    "created_at": "2025-07-01T10:34:24.890947",
+    "ip": "127.0.0.1"
   }
 ]
