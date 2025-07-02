@@ -18,7 +18,7 @@ CORS(app, resources={
 
 # Configurações do sistema anti-bot
 BOT_DETECTION_CONFIG = {
-    'MAX_REQUESTS_PER_MINUTE': 35,
+    'MAX_REQUESTS_PER_MINUTE': 45,
     'MAX_FAILED_LOGINS': 5,
     'BLOCK_DURATION_MINUTES': 15,
     'MIN_FORM_FILL_TIME': 0.5,  # segundos
@@ -181,7 +181,7 @@ def analyze_form_behavior(behavior_data):
         focus_times = list(behavior_data['fieldFocusTimes'].values())
         if len(focus_times) > 2:
             intervals = [focus_times[i] - focus_times[i-1] for i in range(1, len(focus_times))]
-            if intervals and all(abs(i - intervals[0]) < 100 for i in intervals):  # Intervalos muito similares
+            if intervals and all(abs(i - intervals[0]) < 50 for i in intervals):  # Intervalos muito similares
                 reasons.append("Sequência de foco muito regular")
     
     return reasons

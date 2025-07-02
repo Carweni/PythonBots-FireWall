@@ -7,7 +7,7 @@ INTERVALO = 5  # segundos entre requisições
 REPETICOES = 50
 
 for i in range(REPETICOES):
-    print(f"🔁 [{i+1}] Enviando requisição para {ROTA}...")
+    print(f"[{i+1}] Enviando requisição para {ROTA}...")
     try:
         response = requests.post(IP + ROTA, json={
             "email": "fake@bot.com",
@@ -18,7 +18,7 @@ for i in range(REPETICOES):
                 "keyStrokes": 2
             }
         })
-        print(f"🧾 Código de resposta: {response.status_code}")
+        print(f"Código de resposta: {response.status_code}")
     except Exception as e:
         print("Erro:", e)
     

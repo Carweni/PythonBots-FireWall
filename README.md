@@ -18,7 +18,7 @@ Criar um sistema que detecta e bloqueia acessos maliciosos automatizados (bots/m
 
 O sistema utiliza as seguintes configurações padrão para detecção de bots:
 
-- Máximo de requisições por minuto: 35
+- Máximo de requisições por minuto: 45
 - Máximo de tentativas de login falhadas: 5
 - Duração do bloqueio: 15 minutos
 - Tempo mínimo de preenchimento de formulário: 0.5 segundos
