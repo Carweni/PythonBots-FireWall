@@ -1,37 +1,5 @@
 [
   {
-    "timestamp": "2025-07-01T17:22:11.230008",
-    "ip": "127.0.0.1",
-    "endpoint": "get_products",
-    "success": true,
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0",
-    "details": {}
-  },
-  {
-    "timestamp": "2025-07-01T17:22:14.120007",
-    "ip": "127.0.0.1",
-    "endpoint": "get_products",
-    "success": true,
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0",
-    "details": {}
-  },
-  {
-    "timestamp": "2025-07-01T17:22:16.004953",
-    "ip": "127.0.0.1",
-    "endpoint": "get_products",
-    "success": true,
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0",
-    "details": {}
-  },
-  {
-    "timestamp": "2025-07-01T17:22:17.255343",
-    "ip": "127.0.0.1",
-    "endpoint": "get_products",
-    "success": true,
-    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0",
-    "details": {}
-  },
-  {
     "timestamp": "2025-07-01T17:22:19.134612",
     "ip": "127.0.0.1",
     "endpoint": "get_products",
@@ -220,6 +188,82 @@
     "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0",
     "details": {
       "bot_reasons": [
+        "Poucos movimentos do mouse: 0"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-07-02T10:49:43.749803",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-07-02T10:50:31.745784",
+    "ip": "127.0.0.1",
+    "endpoint": "login",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "details": {
+      "bot_reasons": [
+        "Poucos movimentos do mouse: 0"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-07-02T11:05:29.250440",
+    "ip": "127.0.0.1",
+    "endpoint": "serve_static",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "details": {
+      "blocked_reason": "Bot detectado no login: Poucos movimentos do mouse: 0"
+    }
+  },
+  {
+    "timestamp": "2025-07-02T11:05:50.609666",
+    "ip": "127.0.0.1",
+    "endpoint": "get_products",
+    "success": true,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-07-02T11:05:59.537664",
+    "ip": "127.0.0.1",
+    "endpoint": "login",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "details": {
+      "bot_reasons": [
+        "Poucos movimentos do mouse: 0"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-07-02T11:08:06.723358",
+    "ip": "127.0.0.1",
+    "endpoint": "login",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "details": {
+      "bot_reasons": [
+        "Preenchimento muito rápido: 1.919e-08s",
+        "Poucos movimentos do mouse: 0"
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-07-02T11:08:48.851120",
+    "ip": "127.0.0.1",
+    "endpoint": "login",
+    "success": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "details": {
+      "bot_reasons": [
+        "Preenchimento muito rápido: 0.1951s",
         "Poucos movimentos do mouse: 0"
       ]
     }

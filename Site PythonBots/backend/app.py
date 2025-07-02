@@ -235,10 +235,10 @@ def get_products():
     except (FileNotFoundError, json.JSONDecodeError):
         # Se o arquivo não existir ou estiver inválido, retorna os produtos padrão
         default_products = [
-            {"id": 1, "nome": "Notebook Gamer", "preco": 4599.90, "imagem_url": "https://via.placeholder.com/150/0000FF/FFFFFF?text=Notebook"},
-            {"id": 2, "nome": "Mouse Sem Fio", "preco": 129.99, "imagem_url": "https://via.placeholder.com/150/FF0000/FFFFFF?text=Mouse"},
-            {"id": 3, "nome": "Teclado Mecânico", "preco": 349.50, "imagem_url": "https://via.placeholder.com/150/008000/FFFFFF?text=Teclado"},
-            {"id": 4, "nome": "Monitor 4K", "preco": 1899.00, "imagem_url": "https://via.placeholder.com/150/FFFF00/000000?text=Monitor"}
+            {"id": 1, "nome": "Notebook Gamer", "preco": 4599.90, "imagem_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Ynl4AChcD5ZsO_c2enJMr9ajzGuPMQEcpQ&s"},
+            {"id": 2, "nome": "Mouse Sem Fio", "preco": 129.99, "imagem_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS2GE7OTe2cGTjdBbNeCd0KAmatP3hEFgdew&s"},
+            {"id": 3, "nome": "Teclado Mecânico", "preco": 349.50, "imagem_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqa8NJbK7fbEu-CixJau3j-4i4Yw29NjdTUA&s"},
+            {"id": 4, "nome": "Monitor 4K", "preco": 1899.00, "imagem_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWSuEJDHT2bbtLRsjdquvO91v6tipFcb18sw&s"}
         ]
         save_json_file(DATA_FILES['products'], default_products)
         return jsonify(default_products)

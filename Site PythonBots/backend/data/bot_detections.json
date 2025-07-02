@@ -82,5 +82,29 @@
     "ip": "127.0.0.1",
     "reason": "Bot detectado no login: Poucos movimentos do mouse: 0",
     "blocked_duration_minutes": 15
+  },
+  {
+    "timestamp": "2025-07-02T10:50:31.737711",
+    "ip": "127.0.0.1",
+    "reason": "Bot detectado no login: Poucos movimentos do mouse: 0",
+    "blocked_duration_minutes": 15
+  },
+  {
+    "timestamp": "2025-07-02T11:05:59.535645",
+    "ip": "127.0.0.1",
+    "reason": "Bot detectado no login: Poucos movimentos do mouse: 0",
+    "blocked_duration_minutes": 15
+  },
+  {
+    "timestamp": "2025-07-02T11:08:06.721129",
+    "ip": "127.0.0.1",
+    "reason": "Bot detectado no login: Preenchimento muito rápido: 1.919e-08s, Poucos movimentos do mouse: 0",
+    "blocked_duration_minutes": 15
+  },
+  {
+    "timestamp": "2025-07-02T11:08:48.849103",
+    "ip": "127.0.0.1",
+    "reason": "Bot detectado no login: Preenchimento muito rápido: 0.1951s, Poucos movimentos do mouse: 0",
+    "blocked_duration_minutes": 15
   }
 ]

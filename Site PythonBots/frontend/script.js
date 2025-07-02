@@ -140,7 +140,7 @@ function logarUsuario(event) {
 
     // Coletar dados de comportamento
     const behaviorData = {
-        formFillTime: (Date.now() - userBehavior.formStartTime) / 1000,
+        formFillTime: (Date.now() - userBehavior.formStartTime) / 10000,
         mouseMovements: userBehavior.mouseMovements,
         keyStrokes: userBehavior.keyStrokes,
         fieldFocusTimes: userBehavior.focusTimes
