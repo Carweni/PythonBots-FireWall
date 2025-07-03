@@ -95,3 +95,9 @@ Certifique-se de que as bibliotecas python Selenium (para automação de navegad
 ```bash
 pip install selenium requests pyautogui pygetwindow
 ```
+
+## Autoras:
+- **Caroline Morelli da Silveira**
+- **Maria Isabela Silva Nunes**
+
+<p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
